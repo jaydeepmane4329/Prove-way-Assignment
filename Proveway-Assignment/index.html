@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proveway Assignment</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="prices.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Main DIVISION -->
+  <div id="main_container">
+    <header><span>YAY! It’s BOGO</span></header>
+    <section>
+      <article class="div_1">
+        <table class="main_table">
+          <tr>
+            <td>
+              <input type="radio" name="item" id="box1" onclick="add('Box_1')" />
+              <label for="box1">1 Unit</label>
+              <span class="discount">10% off</span>
+              <h1>Standard Price</h1>
+            </td>
+            <td>
+              <h6>$10.00 USD</h6>
+              <h5>$24:00 USD</h5>
+            </td>
+          </tr>
+          <table id="Box_1"></table>
+        </table>
+      </article>
+      <article class="div_2">
+        <table class="main_table">
+          <tr>
+            <td colspan="2">
+              <input type="radio" name="item" id="box2" onclick="add('Box_2')" />
+              <label for="box2">2 Unit</label>
+              <span class="discount">20% off</span>
+            </td>
+            <td>
+              <h6>$18.00 USD</h6>
+              <h5>$24:00 USD</h5>
+            </td>
+          </tr>
+          <table id="Box_2"></table>
+        </table>
+        <span class="most-popular">MOST POPULAR</span> <!-- The label here -->
+      </article>
+      <article class="div_3">
+        <table class="main_table">
+          <tr>
+            <td>
+              <input type="radio" name="item" id="box3" onclick="add('Box_3')" />
+              <label for="box3">3 Unit</label>
+              <span class="discount">30% off</span>
+            </td>
+            <td>
+              <h6>$24.00 USD</h6>
+              <h5>$24:00 USD</h5>
+            </td>
+          </tr>
+          <table id="Box_3"></table>
+        </table>
+      </article>
+    </section>
+    <footer>
+      <span>Free Delivery</span>
+      <span>Total : <b>$18.00 USD</b></span><br />
+      <button><i class="fa fa-plus" style="font-size:12px;color:#FFFFFF;"></i> Add to Cart</button>
+      <p><i>&copy;</i>Powered by Pumper</p>
+    </footer>
+  </div>
+  <!-- External Javascript -->
+  <script type="text/javascript" src="prices.js"></script>
+</body>
+
+</html>
